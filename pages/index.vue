@@ -104,7 +104,7 @@
             <p>
               Fale agora mesmo com um de nossos especialistas e descubra como podemos lhe ajudar.
             </p>
-            <b-button pill href="#" class="btn-outline-light" variant="dark" block>
+            <b-button pill href="#" class="btn-outline-light mt-4" variant="dark" block>
               <font-awesome-icon class="fa-lg" :icon="['far', 'comment-dots']"/> Fale com um especialista
             </b-button>
           </b-col>
