@@ -1,0 +1,260 @@
+// Custom variable overrides go first
+@import "parts/variables";
+
+// Then include the following
+@import '~bootstrap/scss/bootstrap.scss';
+@import '~bootstrap-vue/src/index.scss';
+
+// And define any of your custom or additional CSS/SCSS here,
+// or via an @import
+//@import './parts/variables.scss';
+//@import './parts/navbar.scss';
+
+.index-page {
+  .page-header {
+    height: 100vh;
+    .container {
+      height: 100%;
+    }
+    .content-center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 2;
+      transform: translate(-50%,-50%);
+      text-align: center;
+      color: #fff;
+      padding: 0 15px;
+      width: 100%;
+      max-width: 880px;
+      &.brand {
+        .h1-seo {
+          font-size: 5em;
+          color: $white;
+          font-weight: 600;
+          text-transform: capitalize;
+
+          span {
+            font-weight: $font-weight-bold;
+          }
+        }
+      }
+    }
+    h1{
+      font-weight: 600;
+    }
+  }
+
+  .squares {
+    animation: a 1s infinite;
+    background: #00a859;
+    background: linear-gradient(0deg,#00a859, #00be59);
+    position: absolute;
+    transition: .5s ease-out;
+    overflow: hidden;
+    border-radius: 20%;
+
+    &.square1{
+      animation: move-left-right 4s infinite;
+      height: 300px;
+      width: 300px;
+      opacity: 0.5;
+      left: 3%;
+      top: -21%;
+    }
+
+    &.square2{
+      animation: move-left-right 6s infinite;
+      height: 400px;
+      width: 400px;
+      opacity: 0.1;
+      right: -5%;
+      top: 15%;
+    }
+
+    &.square3{
+      animation: move-left-right 5s infinite;
+      height: 200px;
+      width: 200px;
+      opacity: 0.1;
+      left: -5%;
+      bottom: 0%;
+    }
+
+    &.square4{
+      animation: move-left-right 10s infinite;
+      height: 100px;
+      width: 100px;
+      opacity: 0.9;
+      right: 27%;
+      top: 70%;
+    }
+
+    // &.square5{
+    //   animation: move-left-right 6s infinite;
+    //   height: 250px;
+    //   width: 250px;
+    //   opacity: 0.1;
+    //   left: 32%;
+    //   bottom: 29%;
+    // }
+    &.square5{
+      animation: move-left-right 6s infinite;
+      height: 250px;
+      width: 250px;
+      opacity: 0.1;
+      left: 0%;
+      top: 35%;
+    }
+
+    &.square6{
+      animation: move-left-right 9s infinite;
+      left: 10%;
+      top: 35%;
+      height: 80px;
+      width: 80px;
+      opacity: 0.8;
+    }
+
+    &.square7{
+      animation: move-left-right 3s infinite;
+      width: 300px;
+      height: 300px;
+      right: -5%;
+      bottom: 0%;
+      opacity: 0.1;
+    }
+  }
+
+  .squares.square1 {
+    animation: a 4s infinite;
+    height: 300px;
+    width: 300px;
+    opacity: .5;
+    left: 3%;
+    top: -21%;
+  }
+}
+
+.header-filter {
+  position: relative;
+}
+
+.page-header {
+  min-height: 100vh;
+  max-height: 999px;
+  padding: 0;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+
+// Core
+
+//@import "blk-design-system/custom/functions";
+//@import "blk-design-system/bootstrap/functions";
+//
+//@import "./parts/variables";
+//@import "blk-design-system/bootstrap/variables";
+//
+@import "parts/mixins";
+//@import "blk-design-system/bootstrap/mixins";
+
+// Bootstrap components
+
+//@import "blk-design-system/bootstrap/root";
+//@import "blk-design-system/bootstrap/reboot";
+//@import "blk-design-system/bootstrap/type";
+//@import "blk-design-system/bootstrap/images";
+//@import "blk-design-system/bootstrap/code";
+//@import "blk-design-system/bootstrap/grid";
+//@import "blk-design-system/bootstrap/tables";
+//@import "blk-design-system/bootstrap/forms";
+//@import "blk-design-system/bootstrap/buttons";
+//@import "blk-design-system/bootstrap/transitions";
+//@import "blk-design-system/bootstrap/dropdown";
+//@import "blk-design-system/bootstrap/button-group";
+//@import "blk-design-system/bootstrap/input-group";
+//@import "blk-design-system/bootstrap/custom-forms";
+//@import "blk-design-system/bootstrap/nav";
+//@import "blk-design-system/bootstrap/navbar";
+//@import "blk-design-system/bootstrap/card";
+//@import "blk-design-system/bootstrap/breadcrumb";
+//@import "blk-design-system/bootstrap/pagination";
+//@import "blk-design-system/bootstrap/badge";
+//@import "blk-design-system/bootstrap/jumbotron";
+//@import "blk-design-system/bootstrap/alert";
+//@import "blk-design-system/bootstrap/progress";
+//@import "blk-design-system/bootstrap/media";
+//@import "blk-design-system/bootstrap/list-group";
+//@import "blk-design-system/bootstrap/close";
+//@import "blk-design-system/bootstrap/modal";
+//@import "blk-design-system/bootstrap/tooltip";
+//@import "blk-design-system/bootstrap/popover";
+//@import "blk-design-system/bootstrap/carousel";
+//@import "blk-design-system/bootstrap/utilities";
+//@import "blk-design-system/bootstrap/print";
+
+// Custom components
+
+//@import "blk-design-system/custom/alerts.scss";
+//@import "blk-design-system/custom/buttons.scss";
+//@import "blk-design-system/custom/dropdown.scss";
+//@import "blk-design-system/custom/footer.scss";
+//@import "blk-design-system/custom/forms.scss";
+//@import "blk-design-system/custom/images.scss";
+//@import "blk-design-system/custom/modal.scss";
+//@import "blk-design-system/custom/navbar.scss";
+@import "parts/type.scss";
+//@import "blk-design-system/custom/icons.scss";
+//@import "blk-design-system/custom/tables";
+//@import "blk-design-system/custom/checkboxes-radio";
+//@import "blk-design-system/custom/fixed-plugin";
+//@import "blk-design-system/custom/pagination.scss";
+//@import "blk-design-system/custom/misc.scss";
+//@import "blk-design-system/custom/rtl.scss";
+//@import "blk-design-system/custom/input-group.scss";
+//@import "blk-design-system/custom/example-pages.scss";
+//@import "blk-design-system/custom/progress.scss";
+//@import "blk-design-system/custom/badge.scss";
+//@import "blk-design-system/custom/pills.scss";
+//@import "blk-design-system/custom/tabs.scss";
+@import "parts/info-areas.scss";
+
+// Sections
+@import "parts/sections.scss";
+
+
+
+// Vendor / Plugins
+
+//@import "blk-design-system/custom/vendor/plugin-perfect-scrollbar.scss";
+//@import "blk-design-system/custom/vendor/plugin-animate-bootstrap-notify.scss";
+//@import "blk-design-system/custom/vendor/plugin-bootstrap-switch.scss";
+//@import "blk-design-system/custom/vendor/plugin-nouislider.scss";
+//@import "blk-design-system/custom/vendor/plugin-datetimepicker.scss";
+
+
+// Cards
+
+@import 'parts/card';
+//@import "blk-design-system/custom/cards/card-chart";
+//@import "blk-design-system/custom/cards/card-map";
+//@import "blk-design-system/custom/cards/card-user";
+//@import "blk-design-system/custom/cards/card-task";
+//@import "blk-design-system/custom/cards/card-plain";
+//@import "blk-design-system/custom/cards/card-register";
+//@import "blk-design-system/custom/cards/card-stats";
+//@import "blk-design-system/custom/cards/card-chart";
+
+.index-page {
+  background-image: url("../../assets/img/dots.png");
+  background-size: contain;
+
+  //h1{
+  //  font-weight: 600;
+  //  line-height: 1.05;
+  //  margin-bottom: 30px;
+  //}
+}
