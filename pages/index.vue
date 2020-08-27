@@ -25,16 +25,20 @@
                 <font-awesome-icon class="fa-lg" :icon="['fas', 'desktop']"/> Solicitar uma demonstração
               </b-button> -->
 
-              <b-button pill href="#" class="outline-secondary" variant="dark" block>
+              <a href="#" class="primary" variant="dark">
+                Saiba mais...
+              </a>
+              <br>
+              <b-button pill href="#" class="outline-primary" variant="dark">
                 Saiba mais...
               </b-button>
             </b-col>
-            <b-col md="5" lg="4">
+            <b-col md="5" lg="4" class="mt-3">
               <b-button pill href="#" class="btn-outline-light" variant="dark" block>
-                <font-awesome-icon class="fa-lg" size="2x" :icon="['fas', 'desktop']"/> Solicitar uma demonstração
+                <font-awesome-icon class="fa-lg" :icon="['fas', 'desktop']"/> Solicitar uma demonstração
               </b-button>
               <b-button pill href="#" class="btn-outline-light" variant="dark" block>
-                <font-awesome-icon class="fa-lg" size="2x" :icon="['far', 'comment-dots']"/> Fale com um especialista
+                <font-awesome-icon class="fa-lg" :icon="['far', 'comment-dots']"/> Fale com um especialista
               </b-button>
               <!-- <b-img src="/mentor-soft-white.png" alt="Circle image" class="img-fluid" /> -->
             </b-col>
@@ -45,22 +49,64 @@
     <section class="section mentor-soft">
       <b-container>
         <b-row class="justify-content-center">
-          <b-col cols="9">
-            <h1>Recursos</h1>
-            <ul>
-              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum esse, expedita facere labore maiores
-                maxime necessitatibus praesentium quidem veritatis voluptate. Atque autem distinctio enim mollitia odit
-                perspiciatis ullam voluptatum. Est!
+          <b-col cols="12" md="7">
+            <h1 class="display-4">
+              <span class="text-primary">Mentor Soft</span> ERP
+            </h1>
+            <ul class="list-unstyled mt-5">
+              <li class="py-2">
+                <div class="d-flex align-items-center">
+                  <div class="icon icon-success mb-2">
+                    <font-awesome-icon class="fa-lg" :icon="['fas', 'check']"/>
+                  </div>
+                  <div class="ml-3">
+                    <p><strong>Controle de Estoque</strong> que realmente funciona!</p>
+                  </div>
+                </div>
               </li>
-              <li>Accusantium architecto corporis culpa debitis, dignissimos distinctio dolore illo in, laboriosam
-                maiores molestiae natus necessitatibus neque nihil pariatur quaerat qui quis, repellendus reprehenderit
-                sed sequi unde voluptas voluptate? Cupiditate, incidunt.
+              <li class="py-2">
+                <div class="d-flex align-items-center">
+                  <div class="icon icon-success mb-2">
+                    <font-awesome-icon class="fa-lg" :icon="['fas', 'check']"/>
+                  </div>
+                  <div class="ml-3">
+                    <p><strong>Custo de Produto</strong> correto!</p>
+                  </div>
+                </div>
               </li>
-              <li>Accusantium, animi, beatae consequatur consequuntur cupiditate expedita illo, iusto labore minima
-                obcaecati odit officiis quis ratione recusandae vel veritatis voluptates? Dignissimos minima, officia
-                officiis optio placeat sint tempora totam vel.
+              <li class="py-2">
+                <div class="d-flex align-items-center">
+                  <div class="icon icon-success mb-2">
+                    <font-awesome-icon class="fa-lg" :icon="['fas', 'check']"/>
+                  </div>
+                  <div class="ml-3">
+                    <p>Controle total referente as <strong>Percas de Produção</strong>!</p>
+                  </div>
+                </div>
+              </li>
+              <li class="py-2">
+                <div class="d-flex align-items-center">
+                  <div class="icon icon-success mb-2">
+                    <font-awesome-icon class="fa-lg" :icon="['fas', 'check']"/>
+                  </div>
+                  <div class="ml-3">
+                    <p><strong>Fluxo de Caixa</strong> sempre atualizado e com dados para a tomada de decisão!</p>
+                  </div>
+                </div>
               </li>
             </ul>
+
+          </b-col>
+          <b-col cols="12" md="5">
+            <hr class="line-success">
+            <h3>Nós temos a SOLUÇÃO!</h3>
+            <p>Estamos preparados para ajudá-lo a <span class="text-primary">melhorar seus processos</span> e aumentar sua lucratividade utilizando nossas soluções.</p>
+            <p>
+              Fale agora mesmo com um de nossos especialistas e descubra como podemos lhe ajudar.
+            </p>
+            <b-button pill href="#" class="btn-outline-light" variant="dark" block>
+              <font-awesome-icon class="fa-lg" :icon="['far', 'comment-dots']"/> Fale com um especialista
+            </b-button>
           </b-col>
         </b-row>
       </b-container>

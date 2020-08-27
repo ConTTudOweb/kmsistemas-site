@@ -44,7 +44,7 @@ export const modulesSettings = {
     imports: [
       {
         set: '@fortawesome/free-solid-svg-icons',
-        icons: ['faTshirt', 'faUtensils', 'faAtom', 'faDesktop']
+        icons: ['faTshirt', 'faUtensils', 'faAtom', 'faDesktop', 'faCheck']
       },
       {
         set: '@fortawesome/free-brands-svg-icons',
