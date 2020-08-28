@@ -9,7 +9,7 @@
 
           <b-row class="justify-content-between align-items-center text-left">
             <b-col md="6">
-              <h1 alt="Mentor Soft ERP"><b-img src="/mentor-soft-white.png" style="height: 150px;" alt="Mentor Soft ERP" class="img-fluid" /></h1>
+              <h1 alt="Mentor Soft ERP"><b-img src="/mentor-soft-white.png" alt="Mentor Soft ERP" class="img-fluid" /></h1>
               <br>
               <h3><strong>Um sistema desenvolvido para lhe trazer resultados efetivos!</strong></h3>
               <p>Integração dos setores de sua indústria através de uma ferramenta completa e segura. Gestão empresarial facilitada na prática, dos processos internos ao usuário final.</p>

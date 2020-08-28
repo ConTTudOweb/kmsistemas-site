@@ -11,7 +11,7 @@
         <b-collapse id="nav-collapse" is-nav>
           <!-- TODO: Fazer active class -->
           <b-navbar-nav class="mx-auto">
-            <b-nav-item class="my-auto" href="#">Mentor Soft</b-nav-item>
+            <b-nav-item class="my-auto active" href="#">Mentor Soft</b-nav-item>
             <b-nav-item class="my-auto" href="#">Sobre a KM</b-nav-item>
             <b-nav-item class="my-auto" href="#">Suporte</b-nav-item>
             <b-nav-item class="my-auto" href="#">Blog</b-nav-item>
