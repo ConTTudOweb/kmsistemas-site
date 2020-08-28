@@ -21,7 +21,7 @@
               </div>
             </b-col>
             
-            <b-col md="5" lg="4" class="mt-5">
+            <b-col md="6" lg="5" class="mt-5">
               <b-button pill href="#" class="py-2" variant="primary" block>
                 <font-awesome-icon class="fa-lg" :icon="['fas', 'desktop']"/> Solicite uma demonstração
               </b-button>
