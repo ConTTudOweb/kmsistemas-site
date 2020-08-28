@@ -9,11 +9,19 @@
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
         <b-collapse id="nav-collapse" is-nav>
-          <!-- Right aligned nav items -->
-          <b-navbar-nav class="ml-auto">
+          <!-- TODO: Fazer active class -->
+          <b-navbar-nav class="mx-auto">
             <b-nav-item class="my-auto" href="#">Mentor Soft</b-nav-item>
-
+            <b-nav-item class="my-auto" href="#">Sobre a KM</b-nav-item>
             <b-nav-item class="my-auto" href="#">Suporte</b-nav-item>
+            <b-nav-item class="my-auto" href="#">Blog</b-nav-item>
+          </b-navbar-nav>
+
+          <!-- Right aligned nav items -->
+          <b-navbar-nav class="">
+            <!-- <b-nav-item class="my-auto" href="#">Mentor Soft</b-nav-item> -->
+
+            <!-- <b-nav-item class="my-auto" href="#">Suporte</b-nav-item> -->
 
             <b-nav-item class="my-auto" href="https://www.facebook.com/kmsistemas.br" target="_blank">
               <font-awesome-icon class="fa-lg" :icon="['fab', 'facebook-square']"/>

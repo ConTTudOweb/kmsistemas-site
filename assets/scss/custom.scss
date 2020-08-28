@@ -48,7 +48,7 @@
   .squares {
     animation: a 1s infinite;
     background: #00a859;
-    background: linear-gradient(0deg,#00a859, #00be59);
+    // background: linear-gradient(0deg,#00a859, #00be59);
     position: absolute;
     transition: .5s ease-out;
     overflow: hidden;
@@ -85,7 +85,7 @@
       animation: move-left-right 10s infinite;
       height: 100px;
       width: 100px;
-      opacity: 0.9;
+      opacity: 0.5;
       right: 27%;
       top: 70%;
     }

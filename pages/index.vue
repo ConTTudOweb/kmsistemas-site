@@ -1,51 +1,39 @@
 <template>
   <div class="index-page wrapper">
     <div class="page-header header-filter">
-      <!--<div class="squares square1"></div>-->
-      <div class="squares square2 d-none d-md-inline"></div>
-      <div class="squares square3 d-none d-md-inline"></div>
-      <div class="squares square4 d-none d-md-inline"></div>
-      <div class="squares square5 d-none d-md-inline"></div>
-      <!-- <div class="squares square6"></div> -->
-      <div class="squares square7 d-none d-md-inline"></div>
-
+      
+      <squares />
+      
       <b-container>
         <div class="content-center brand">
 
           <b-row class="justify-content-between align-items-center text-left">
             <b-col md="6">
-              <h1 alt="Mentor Soft ERP"><b-img src="/mentor-soft-white.png" alt="Mentor Soft ERP" class="img-fluid" /></h1>
-              <!-- <h1 class="h1-seo">Mentor Soft
-                <br>
-                <span>ERP</span>
-              </h1> -->
-              <p>Com um software específico para sua indústria com foco em gestão empresarial ao usuário final, buscamos melhores resultados na integraçao dos setores com uma solução completa, efetiva e segura.</p>
-              <p>O Sistema de Gestão que sua Empresa Precisa!</p>
-              <!-- <b-button href="#" variant="success">
-                <font-awesome-icon class="fa-lg" :icon="['fas', 'desktop']"/> Solicitar uma demonstração
-              </b-button> -->
-
-              <a href="#" class="primary" variant="dark">
-                Saiba mais...
-              </a>
+              <h1 alt="Mentor Soft ERP"><b-img src="/mentor-soft-white.png" style="height: 150px;" alt="Mentor Soft ERP" class="img-fluid" /></h1>
               <br>
-              <b-button pill href="#" class="outline-primary" variant="dark">
-                Saiba mais...
-              </b-button>
+              <h3><strong>Um sistema desenvolvido para lhe trazer resultados efetivos!</strong></h3>
+              <p>Integração dos setores de sua indústria através de uma ferramenta completa e segura. Gestão empresarial facilitada na prática, dos processos internos ao usuário final.</p>
+              
+              <div class="d-flex justify-content-center justify-content-md-start">
+                <b-button pill href="#" class="outline-primary mt-3" variant="dark">
+                  Saiba mais...
+                </b-button>
+              </div>
             </b-col>
-            <b-col md="5" lg="4" class="mt-3">
-              <b-button pill href="#" class="btn-outline-light" variant="dark" block>
-                <font-awesome-icon class="fa-lg" :icon="['fas', 'desktop']"/> Solicitar uma demonstração
+            
+            <b-col md="5" lg="4" class="mt-5">
+              <b-button pill href="#" class="py-2" variant="primary" block>
+                <font-awesome-icon class="fa-lg" :icon="['fas', 'desktop']"/> Solicite uma demonstração
               </b-button>
-              <b-button pill href="#" class="btn-outline-light" variant="dark" block>
+              <b-button pill href="#" class="text-light mt-4 py-2" variant="dark" block>
                 <font-awesome-icon class="fa-lg" :icon="['far', 'comment-dots']"/> Fale com um especialista
               </b-button>
-              <!-- <b-img src="/mentor-soft-white.png" alt="Circle image" class="img-fluid" /> -->
             </b-col>
           </b-row>
         </div>
       </b-container>
     </div>
+
     <section class="section mentor-soft">
       <b-container>
         <b-row class="justify-content-center">
@@ -54,43 +42,13 @@
               <span class="text-primary">Mentor Soft</span> ERP
             </h1>
             <ul class="list-unstyled mt-5">
-              <li class="py-2">
+              <li class="py-2" :key="i" v-for="(item, i) in beneficios">
                 <div class="d-flex align-items-center">
                   <div class="icon icon-success mb-2">
                     <font-awesome-icon class="fa-lg" :icon="['fas', 'check']"/>
                   </div>
                   <div class="ml-3">
-                    <p><strong>Controle de Estoque</strong> que realmente funciona!</p>
-                  </div>
-                </div>
-              </li>
-              <li class="py-2">
-                <div class="d-flex align-items-center">
-                  <div class="icon icon-success mb-2">
-                    <font-awesome-icon class="fa-lg" :icon="['fas', 'check']"/>
-                  </div>
-                  <div class="ml-3">
-                    <p><strong>Custo de Produto</strong> correto!</p>
-                  </div>
-                </div>
-              </li>
-              <li class="py-2">
-                <div class="d-flex align-items-center">
-                  <div class="icon icon-success mb-2">
-                    <font-awesome-icon class="fa-lg" :icon="['fas', 'check']"/>
-                  </div>
-                  <div class="ml-3">
-                    <p>Controle total referente as <strong>Percas de Produção</strong>!</p>
-                  </div>
-                </div>
-              </li>
-              <li class="py-2">
-                <div class="d-flex align-items-center">
-                  <div class="icon icon-success mb-2">
-                    <font-awesome-icon class="fa-lg" :icon="['fas', 'check']"/>
-                  </div>
-                  <div class="ml-3">
-                    <p><strong>Fluxo de Caixa</strong> sempre atualizado e com dados para a tomada de decisão!</p>
+                    <p v-html="item"></p>
                   </div>
                 </div>
               </li>
@@ -164,6 +122,22 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import Squares from '@/components/site/Squares.vue'
 
-export default Vue.extend({})
+export default Vue.extend({
+  components: {
+    Squares
+  },
+
+  data() {
+    return {
+      beneficios: [
+        '<strong>Controle de Estoque</strong> que realmente funciona!',
+        '<strong>Custo de Produto</strong> correto!',
+        'Controle total referente as <strong>Percas de Produção</strong>!',
+        '<strong>Fluxo de Caixa</strong> sempre atualizado e com dados para a tomada de decisão!'
+      ]
+    }
+  }
+})
 </script>

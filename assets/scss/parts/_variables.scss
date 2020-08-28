@@ -99,7 +99,7 @@ $opacity-8:                  rgba(255,255,255, .8) !default;
 $default:       #344675 !default;
 $primary:       #00a859 !default;
 $secondary:     #f4f5f7 !default;
-$success:       #00f2c3 !default;
+$success:       #a8cf45 !default; //#00f2c3
 $info:          #1d8cf8 !default;
 $warning:       #ff8d72 !default;
 $danger:        #fd5d93 !default;
@@ -379,7 +379,7 @@ $margin-base-vertical:         15px !default;
 $font-family-base:            'Poppins', sans-serif !default;
 $font-family-alt:             'Poppins', sans-serif !default;
 
-$font-size-dash:              .875rem !default;
+$font-size-dash:              .975rem !default;
 
 $font-size-base:              $font-size-dash !default; // Assumes the browser default, typically `16px`
 //$font-size-xl:                ($font-size-base * 1.428);
