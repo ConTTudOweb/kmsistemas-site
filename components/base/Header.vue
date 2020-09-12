@@ -32,9 +32,9 @@
               <span class="d-inline d-lg-none"> Instagram</span>
             </b-nav-item>
 
-            <b-button pill href="#" class="outline-primary" variant="dark">
-              Torne-se um Representante
-            </b-button>
+            <b-nav-item class="my-auto">
+                <small>Torne-se um Representante</small>
+            </b-nav-item>
 
           </b-navbar-nav>
         </b-collapse>

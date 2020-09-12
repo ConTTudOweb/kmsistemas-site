@@ -11,39 +11,39 @@
 //@import './parts/navbar.scss';
 
 .index-page {
-  .page-header {
-    height: 100vh;
-    .container {
-      height: 100%;
-    }
-    .content-center {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      z-index: 2;
-      transform: translate(-50%,-50%);
-      text-align: center;
-      color: #fff;
-      padding: 0 15px;
-      width: 100%;
-      max-width: 880px;
-      &.brand {
-        .h1-seo {
-          font-size: 5em;
-          color: $white;
-          font-weight: 600;
-          text-transform: capitalize;
+  // .page-header {
+  //   height: 100vh;
+  //   .container {
+  //     height: 100%;
+  //   }
+  //   .content-center {
+  //     position: absolute;
+  //     top: 50%;
+  //     left: 50%;
+  //     z-index: 2;
+  //     transform: translate(-50%,-50%);
+  //     text-align: center;
+  //     color: #fff;
+  //     padding: 0 15px;
+  //     width: 100%;
+  //     max-width: 880px;
+  //     &.brand {
+  //       .h1-seo {
+  //         font-size: 5em;
+  //         color: $white;
+  //         font-weight: 600;
+  //         text-transform: capitalize;
 
-          span {
-            font-weight: $font-weight-bold;
-          }
-        }
-      }
-    }
-    h1{
-      font-weight: 600;
-    }
-  }
+  //         span {
+  //           font-weight: $font-weight-bold;
+  //         }
+  //       }
+  //     }
+  //   }
+  //   h1{
+  //     font-weight: 600;
+  //   }
+  // }
 
   .squares {
     animation: a 1s infinite;
@@ -140,14 +140,14 @@
   position: relative;
 }
 
-.page-header {
-  min-height: 100vh;
-  max-height: 999px;
-  padding: 0;
-  color: #fff;
-  position: relative;
-  overflow: hidden;
-}
+// .page-header {
+//   min-height: 100vh;
+//   max-height: 999px;
+//   padding: 0;
+//   color: #fff;
+//   position: relative;
+//   overflow: hidden;
+// }
 
 
 // Core

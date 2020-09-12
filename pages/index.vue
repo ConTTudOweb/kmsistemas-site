@@ -1,31 +1,34 @@
 <template>
-  <div class="index-page wrapper">
-    <div class="page-header header-filter">
-      
+  <div class="index-page ">
+    <div class="page-header page-header-small header-filter d-flex align-items-center">
+
       <squares />
-      
+
       <b-container>
-        <div class="content-center brand">
+        <div class="content-center pb-4">
 
           <b-row class="justify-content-between align-items-center text-left">
-            <b-col md="6">
-              <h1 alt="Mentor Soft ERP"><b-img src="/mentor-soft-white.png" alt="Mentor Soft ERP" class="img-fluid" /></h1>
+            <b-col md="7">
+              <!-- <h1 alt="Mentor Soft ERP"><b-img src="/mentor-soft-white.png" alt="Mentor Soft ERP" class="img-fluid" /></h1> -->
+              <h1 class="display-4">
+                <span class="text-primary">Mentor Soft</span> ERP
+              </h1>
               <br>
               <h3><strong>Um sistema desenvolvido para lhe trazer resultados efetivos!</strong></h3>
               <p>Integração dos setores de sua indústria através de uma ferramenta completa e segura. Gestão empresarial facilitada na prática, dos processos internos ao usuário final.</p>
-              
+
               <div class="d-flex justify-content-center justify-content-md-start">
-                <b-button pill href="#" class="outline-primary mt-3" variant="dark">
+                <b-button pill href="#" class="outline-primary mt-2" variant="dark">
                   Saiba mais...
                 </b-button>
               </div>
             </b-col>
-            
-            <b-col md="6" lg="5" class="mt-5">
-              <b-button pill href="#" class="py-2" variant="primary" block>
-                <font-awesome-icon class="fa-lg" :icon="['fas', 'desktop']"/> Solicite uma demonstração
+
+            <b-col md="5" class="mt-5">
+              <b-button  href="#" class="py-2" variant="primary" block>
+                <font-awesome-icon class="fa-lg" :icon="['fas', 'desktop']"/> <strong>Solicite uma demonstração</strong>
               </b-button>
-              <b-button pill href="#" class="text-light mt-4 py-2" variant="dark" block>
+              <b-button  href="#" class="text-light mt-4 py-2" variant="dark" block>
                 <font-awesome-icon class="fa-lg" :icon="['far', 'comment-dots']"/> Fale com um especialista
               </b-button>
             </b-col>
@@ -36,11 +39,12 @@
 
     <section class="section mentor-soft">
       <b-container>
-        <b-row class="justify-content-center">
+        <b-row class="justify-content-center align-items-center">
           <b-col cols="12" md="7">
-            <h1 class="display-4">
-              <span class="text-primary">Mentor Soft</span> ERP
-            </h1>
+            <h1 alt="Mentor Soft ERP"><b-img src="/mentor-soft-white.png" alt="Mentor Soft ERP" class="img-fluid" /></h1>
+<!--            <h1 class="display-4">-->
+<!--              <span class="text-dark">Mentor Soft</span> ERP-->
+<!--            </h1>-->
             <ul class="list-unstyled mt-5">
               <li class="py-2" :key="i" v-for="(item, i) in beneficios">
                 <div class="d-flex align-items-center">
@@ -58,7 +62,7 @@
           <b-col cols="12" md="5">
             <hr class="line-success">
             <h3>Nós temos a SOLUÇÃO!</h3>
-            <p>Estamos preparados para ajudá-lo a <span class="text-primary">melhorar seus processos</span> e aumentar sua lucratividade utilizando nossas soluções.</p>
+            <p>Estamos preparados para ajudá-lo a <span class="text-success"><strong>melhorar seus processos</strong></span> e aumentar sua lucratividade utilizando nossas soluções.</p>
             <p>
               Fale agora mesmo com um de nossos especialistas e descubra como podemos lhe ajudar.
             </p>
